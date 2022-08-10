@@ -84,27 +84,6 @@ body {
     animation: rotar 1 3s ease;
 }
 
-@keyframes rotar {
-    0% {
-        transform: rotate(25deg);
-        transform: translate(-200px);
-        opacity: 0;
-    }
-    25% {
-        transform: rotate(75deg);
-    }
-    50% {
-        transform: rotate(-45deg);
-    }
-    75% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        transform: translate(0px);
-        opacity: 1;
-    }
-}
 
 h1 {
     
@@ -345,12 +324,10 @@ footer section {
     margin-bottom: 40px;
     border-style: dotted black   ;
     float: right;
-    transition: all 1s;
+    
 
 }
-#flecha:hover {
-    background-color: green;
-}
+
 
 .redes_sociales #instagram {
     padding: 5px;
@@ -550,7 +527,7 @@ x
     width: 20px;
     height: 50px;
     font-size: 24px;
-    transition: width 2s ease-in;
+    
 
 }
 .nombre_input:focus {
@@ -560,7 +537,7 @@ x
     width: 20px;
     height: 50px;
     font-size: 24px;
-    transition: width 2s ease-in;
+    
 }
 .email_input:focus {
     width: 320px;
@@ -569,7 +546,7 @@ x
     width: 20px;
     height: 50px;
     font-size: 24px;
-    transition: width 2s ease-in;
+    
 }
 .mensaje_input:focus {
     width: 320px;
