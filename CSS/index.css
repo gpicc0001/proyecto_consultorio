@@ -15,7 +15,7 @@ body {
 }
 
 .grilla {
-    width: 100%;
+    width: auto;
     height: 1920px;
     display: grid;
     grid-template-areas: 
@@ -413,12 +413,12 @@ footer section {
 .mapa {
    grid-area: mapa;
    display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(4, 1fr);
+   /* grid-template-columns: repeat(12, 1fr); */
+   /* grid-template-rows: repeat(4, 1fr); */
 }
 .mapa_ub {
-    grid-column: span 6;
-    grid-row: 1/5;
+    /* grid-column: span 6;
+    grid-row: 1/5; */
 }
 
 .texto {
