@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -113,7 +114,19 @@ h1 {
     grid-area: h1;
     justify-self: left;
     align-self: center;
+    display: flex;
     
+}
+@media (max-width: 425px) {
+    h1 {
+        width: 560px;
+        font-size: 96px;
+        flex-wrap: nowrap;
+        justify-self: left;
+    }
+    .link {
+        font-size: 46px;
+    }
 }
 
 nav {
@@ -136,9 +149,9 @@ nav {
     grid-area: img_home;
     /* width: 75%;
     height: 550px; */
-    width: 100%;
+    width: 85%;
     height: 75%;
-    justify-self: left;
+    
     align-self: center;
 }
 .subtitulo_home {
