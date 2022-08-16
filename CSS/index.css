@@ -416,10 +416,7 @@ footer section {
    /* grid-template-columns: repeat(12, 1fr); */
    /* grid-template-rows: repeat(4, 1fr); */
 }
-.mapa_ub {
-    /* grid-column: span 6;
-    grid-row: 1/5; */
-}
+
 
 .texto {
     grid-area: texto;
