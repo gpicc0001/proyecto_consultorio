@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&family=Sofia&family=Splash&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -141,9 +142,10 @@ nav {
     text-decoration : none;
     color: black;
     transition: all 2s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
  .link:hover {
-    background-color: aquamarine;
+    text-shadow: 3px 3px gray;
  }
  .img_home {
     grid-area: img_home;
@@ -156,8 +158,9 @@ nav {
 }
 .subtitulo_home {
     grid-area: subtitulo_home;
-    font-size: 42px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-family:'Mali', cursive;
+    color: rgba(127, 85, 57, 1);
    
     align-self: center;
     
