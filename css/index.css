@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     margin: 0px;
 }
@@ -24,6 +25,7 @@ body {
     "footer"    ;
     grid-template-rows: 3fr  10fr 5fr;
     grid-template-columns: auto;
+    position: relative;
 }
 
 .grilla_espec {
@@ -65,7 +67,29 @@ body {
     place-items: center;
 
 }
+.img_home {
+    grid-area: img_home;
+    width: 85%;
+    height: 75%;
+    align-self: center;
+    z-index: 1;
+}
 
+.fondo_body {
+    opacity: 0.2;
+    height: 1323px;
+    width: 100%;
+    grid-area: home;
+    position: absolute;
+    z-index: -1;
+}
+.subtitulo_home {
+    grid-area: subtitulo_home;
+    font-size: 56px;
+    font-family:'Mali', cursive;
+    color: rgba(127, 85, 57, 1);
+    align-self: center;   
+}
 .footer {
     grid-area: footer;
     display: grid;
@@ -145,24 +169,7 @@ nav {
  .link:hover {
     text-shadow: 3px 3px gray;
  }
- .img_home {
-    grid-area: img_home;
-    /* width: 75%;
-    height: 550px; */
-    width: 85%;
-    height: 75%;
-    
-    align-self: center;
-}
-.subtitulo_home {
-    grid-area: subtitulo_home;
-    font-size: 56px;
-    font-family:'Mali', cursive;
-    color: rgba(127, 85, 57, 1);
-   
-    align-self: center;
-    
-}
+
 .footer_inside {
     grid-area: footer_inside;
     display: flex;
@@ -197,6 +204,123 @@ nav {
     flex-direction: column;
     
 }
+/* FOOTER */
+
+/* FLECHAFLOTANTE */
+footer section {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    
+}
+
+.top {
+    margin-right: 1px;
+    margin-bottom: 15px;
+    margin-left: 492px;
+}
+
+#flecha {
+    width: 50px;
+    height: 50px;
+    margin-right: 4px;
+    margin-bottom: 40px;
+    border-style: dotted black   ;
+    float: right;
+    transition: all 1s;
+
+}
+#flecha:hover {
+    background-color: green;
+}
+
+.redes_sociales #instagram {
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    
+   
+}
+.redes_sociales #linkedin {
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    display: inline-block; 
+    
+} 
+.redes_sociales #facebook {
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    
+}
+
+
+@media (max-width:425px ) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* font-size: 32px; */
+        justify-content: center;
+    }
+
+    .subtitulo_home {
+        font-size: 48px;
+    }
+    #logofooter {
+        display: none;
+    }
+    .footer {
+        display: flex;
+        padding: 25px;
+    }
+    .footer_inside{
+        display: flex;
+    }
+    .footer_links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .footer h3 {
+        font-size: 48px;
+    }
+    .footer h4 {
+        font-size: 36px;
+    }
+    .redes_sociales #instagram {
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        
+       
+    }
+    .redes_sociales #linkedin {
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        display: inline-block; 
+        
+    } 
+    .redes_sociales #facebook {
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        
+    }
+    .fondo_body {
+        max-width: 100%;
+    }
+
+}
+
 
 /* ESPECIALIDADES */
 
@@ -335,59 +459,7 @@ section img {
     font-style: italic;
 }
 
-/* FOOTER */
 
-/* FLECHAFLOTANTE */
-footer section {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 50px;
-    
-}
-
-.top {
-    margin-right: 1px;
-    margin-bottom: 15px;
-    margin-left: 492px;
-}
-
-#flecha {
-    width: 50px;
-    height: 50px;
-    margin-right: 4px;
-    margin-bottom: 40px;
-    border-style: dotted black   ;
-    float: right;
-    transition: all 1s;
-
-}
-#flecha:hover {
-    background-color: green;
-}
-
-.redes_sociales #instagram {
-    padding: 5px;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    
-   
-}
-.redes_sociales #linkedin {
-    padding: 5px;
-    height: 25px;
-    width: 25px;
-    display: inline-block; 
-    
-} 
-.redes_sociales #facebook {
-    padding: 5px;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    
-}
 
 
 /* UBICACION */
