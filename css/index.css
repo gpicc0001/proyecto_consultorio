@@ -69,7 +69,7 @@ body {
 }
 .img_home {
     grid-area: img_home;
-    width: 85%;
+    width: 65%;
     height: 75%;
     align-self: center;
     z-index: 1;
@@ -232,7 +232,7 @@ footer section {
 
 }
 #flecha:hover {
-    background-color: green;
+    background-color: rgb(47, 47, 54);
 }
 
 .redes_sociales #instagram {
