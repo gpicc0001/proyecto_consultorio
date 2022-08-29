@@ -1,0 +1,7 @@
+@mixin sizes ($pad, $h, $w, $display) {
+    pad: $pad;
+    height: $h;
+    width: $w;
+    display: $display;
+}
+
