@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@500&family=Sofia&family=Splash&display=swap");
 /*MISC */
 /* PAGINAS */
-
 * {
   margin: 0;
   padding: 0;
@@ -19,16 +18,13 @@ body {
   width: 100%;
   height: 1920px;
   display: grid;
-  grid-template-areas: "header"
- "home"
- "footer";
+  grid-template-areas: "header" "home" "footer";
   grid-template-rows: 3fr  10fr 5fr;
   grid-template-columns: auto; }
   .grilla .home {
     grid-area: home;
     display: grid;
-    grid-template-areas: "subtitulo_home"
- "img_home";
+    grid-template-areas: "subtitulo_home" "img_home";
     grid-template-rows: 2fr 1250px;
     grid-template-columns: auto;
     place-items: center; }
@@ -91,8 +87,7 @@ body {
 .header {
   grid-area: header;
   display: grid;
-  grid-template-areas: "logo h1 h1"
- "nav nav nav";
+  grid-template-areas: "logo h1 h1" "nav nav nav";
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 25% auto auto;
   background: linear-gradient(to bottom, #030358, white); }
@@ -204,46 +199,3 @@ body {
       transition: all 1s; }
     .footer .scroll #flecha:hover {
       background-color: green; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth; }
-
-body {
-  margin: 0px; }
-
-.grilla {
-  width: 100%;
-  height: 1920px;
-  display: grid;
-  grid-template-areas: "header"
- "home"
- "footer";
-  grid-template-rows: 3fr  10fr 5fr;
-  grid-template-columns: auto; }
-  .grilla .home {
-    grid-area: home;
-    display: grid;
-    grid-template-areas: "subtitulo_home"
- "img_home";
-    grid-template-rows: 2fr 1250px;
-    grid-template-columns: auto;
-    place-items: center; }
-    .grilla .home .subtitulo_home {
-      grid-area: subtitulo_home;
-      font-size: 56px;
-      font-family: 'Mali', cursive;
-      color: #7f5539;
-      align-self: center; }
-    .grilla .home .img_home {
-      grid-area: img_home;
-      /* width: 75%;
-            height: 550px; */
-      width: 85%;
-      height: 75%;
-      align-self: center; }
-
