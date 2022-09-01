@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&family=Sofia&family=Splash&display=swap');
+
+/*MISC */
+
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
+
+/* PAGINAS */ 
+
+@import './paginas/index';
+@import './paginas/especialidades';
+@import './paginas/quienessomos';
+@import './paginas/ubicacion';
+@import './paginas/contacto';
+
+/* PARTIALS */ 
+
+@import './partials/header';
+@import './partials/footer';
+
+
+
+
