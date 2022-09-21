@@ -32,7 +32,7 @@ body {
         "img_home"
     
         ;
-        grid-template-rows: 2fr 1250px;
+        grid-template-rows: 1fr 1250px;
         grid-template-columns: auto;
         place-items: center;
         
@@ -44,14 +44,44 @@ body {
            
             align-self: center;
                }
-        .img_home {
+        #carouselExampleIndicators {
             grid-area: img_home;
-            /* width: 75%;
-            height: 550px; */
             width: 85%;
-            height: 80%; 
+            height: 75%;
             align-self: center;
+            z-index: 1;
+            display: flex;
+            align-items: center;
             }
         }
+    .fondo_body {
+        opacity: 0.2;
+        height: 1323px;
+        width: 100%;
+        grid-area: home;
+         position: relative;
+        z-index: -1;
     }
-
+}
+@media (max-width:425px ) {
+    
+    .fondo_body {    
+         max-width: 100%;
+    }
+    .subtitulo_home {
+            // grid-area: subtitulo_home;
+            font-size: 100px;
+            // font-family:'Mali', cursive;
+            // color: rgba(127, 85, 57, 1);
+            // align-self: center;
+                }
+    #carouselExampleIndicators {
+        grid-area: img_home;
+        width: 1000px;
+        height: 90%;
+        align-self: center;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        }
+}

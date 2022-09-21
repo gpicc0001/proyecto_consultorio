@@ -12,7 +12,10 @@
     ;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 25% auto auto;
-    background: linear-gradient(to bottom, rgb(3, 3, 88), white);
+    // background: linear-gradient(to bottom, rgb(3, 3, 88), white);
+    background-color: rgba(230, 204, 178, 1);
+    border: 5px outset;
+    border-radius: 6px;
     #logo {
         width: 300px;
         justify-self: left;

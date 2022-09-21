@@ -7,7 +7,9 @@
     ;
     grid-template-rows: 300px;
     grid-template-columns: 25% 120vh;
-    background: linear-gradient(to top,rgb(3, 3, 88), white);
+    background-color: rgba(230, 204, 178, 1);
+    border: 5px outset;
+    border-radius: 6px;
     
     #logofooter {
         grid-area: logofooter;
@@ -70,6 +72,48 @@
         }
         #flecha:hover {
             background-color: green;
+        }
+    }
+    
+}
+@media (max-width:425px ) {
+    .footer {
+        display: flex;
+        padding: 25px;
+        #logofooter {
+            display: none;
+        }
+        .footer_inside{
+            display: flex;
+            .footer_links{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .footer h3 {
+                    font-size: 48px;
+                .footer h4 {
+                    font-size: 36px;
+                .redes_sociales #instagram {
+                    padding: 5px;
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block;  
+                    }
+                .redes_sociales #linkedin {
+                     padding: 5px;
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block; 
+                    } 
+                .redes_sociales #facebook {
+                    padding: 5px;
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block;
+                    }
+                    }
+                    }
+            }
         }
     }
 }
