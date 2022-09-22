@@ -1,0 +1,160 @@
+.grilla_contact {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contacto_subtitulo"
+    "contacto"
+    "footer" 
+    ;
+    gap: 30px;
+    .contacto_subtitulo {
+        grid-area: contacto_subtitulo;
+        font-size: 48px;
+        font-style: italic;
+        padding: 20px;
+    }
+    .contacto {
+        grid-area: contacto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .cuadrodetexto {
+            width: 50%;
+            height: 850px;
+            padding: 0px;
+            display: flex;
+            justify-content: end;
+            .cuadrodetexto_fieldset {
+    
+                background-color: grey;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .cuadrodetexto_titulo {
+                    font-size: 48px;
+                }
+                .cuadrodetexto_formulario {
+                    width: 650px;
+                    height: 909px;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    .nombre_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        transition: width 2s ease-in;
+                    }
+                    .nombre_input:focus {
+                        width: 320px;
+                    }
+                    .email_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        transition: width 2s ease-in;
+                    }
+                    .email_input:focus {
+                        width: 320px;
+                    }
+                    .mensaje_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        transition: width 2s ease-in;
+                    }
+                    .mensaje_input:focus {
+                        width: 320px;
+                    }
+                    .enviar_input {
+                        width: 110px;
+                        height: 50px;
+                        font-size: 32px;
+                    
+                    }
+                }
+            }
+        }
+        .contacto_foto {
+            height: 850px;
+            
+        }
+    }
+    }
+@media (max-width: 425px) {
+    .contacto {
+        grid-area: contacto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .cuadrodetexto {
+            width: 50%;
+            height: 850px;
+            padding: 0px;
+            display: flex;
+            justify-content: end;
+            .cuadrodetexto_fieldset {
+    
+                background-color: grey;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .cuadrodetexto_titulo {
+                    font-size: 48px;
+                }
+                .cuadrodetexto_formulario {
+                    width: 650px;
+                    height: 909px;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    .nombre_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        // transition: width 2s ease-in;
+                    }
+                    // .nombre_input:focus {
+                    //     width: 320px;
+                    // }
+                    .email_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        // transition: width 2s ease-in;
+                    }
+                    // .email_input:focus {
+                    //     width: 320px;
+                    // }
+                    .mensaje_input {
+                        width: 20px;
+                        height: 50px;
+                        font-size: 24px;
+                        // transition: width 2s ease-in;
+                    }
+                    // .mensaje_input:focus {
+                    //     width: 320px;
+                    // }
+                    .enviar_input {
+                        width: 110px;
+                        height: 50px;
+                        font-size: 32px;
+                    
+                    }
+                }
+            }
+        }
+        .contacto_foto {
+            height: 1000px;
+            
+        }
+    }
+}
+
+
