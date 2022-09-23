@@ -98,17 +98,22 @@ body {
           width: 250px; }
 
 @media (max-width: 1024px) {
-  .box {
+  #box_ortodoncia {
     grid-column: span 6; }
-    .box #box_limpieza {
-      grid-column: 4/10; } }
+  #box_cirugia {
+    grid-column: span 6; }
+  #box_limpieza {
+    grid-column: 4/10; } }
 
 @media (max-width: 480px) {
-  .box {
+  #box_ortodoncia {
     grid-column: span 8;
     grid-column: 3/11; }
-    .box #box_limpieza {
-      grid-column: 3/11; } }
+  #box_cirugia {
+    grid-column: span 8;
+    grid-column: 3/11; }
+  #box_limpieza {
+    grid-column: 3/11; } }
 
 .grilla_who {
   width: 100%;
@@ -282,45 +287,43 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px; }
-    .contacto .cuadrodetexto {
-      width: 50%;
-      height: 850px;
-      padding: 0px;
-      display: flex;
-      justify-content: end; }
-      .contacto .cuadrodetexto .cuadrodetexto_fieldset {
-        background-color: grey;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_titulo {
-          font-size: 48px; }
-        .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_formulario {
-          width: 650px;
-          height: 909px;
-          border: none;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 20px; }
-          .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_formulario .nombre_input {
-            width: 20px;
-            height: 50px;
-            font-size: 24px; }
-          .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_formulario .email_input {
-            width: 20px;
-            height: 50px;
-            font-size: 24px; }
-          .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_formulario .mensaje_input {
-            width: 20px;
-            height: 50px;
-            font-size: 24px; }
-          .contacto .cuadrodetexto .cuadrodetexto_fieldset .cuadrodetexto_formulario .enviar_input {
-            width: 110px;
-            height: 50px;
-            font-size: 32px; }
-    .contacto .contacto_foto {
-      height: 1000px; } }
+  .cuadrodetexto {
+    width: 50%;
+    height: 850px;
+    padding: 0px;
+    display: flex;
+    justify-content: end; }
+  .cuadrodetexto_fieldset {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cuadrodetexto_titulo {
+    font-size: 48px; }
+  .cuadrodetexto_formulario {
+    width: 650px;
+    height: 909px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .nombre_input {
+    width: 20px;
+    height: 50px;
+    font-size: 24px; }
+  .email_input {
+    width: 20px;
+    height: 50px;
+    font-size: 24px; }
+  .mensaje_input {
+    width: 20px;
+    height: 50px;
+    font-size: 24px; }
+  .enviar_input {
+    width: 110px;
+    height: 50px;
+    font-size: 32px; } }
 
 /* PARTIALS */
 .header {

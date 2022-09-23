@@ -42,22 +42,31 @@
     }
 @media (max-width: 1024px) {
 
-    .box {
+    #box_ortodoncia {
         grid-column: span 6;
-        #box_limpieza {
-            grid-column: 4/10;
-            }
     }
+    #box_cirugia {
+        grid-column: span 6;
+    }
+    #box_limpieza {
+        grid-column: 4/10;
+        }
+    
     }
 
 @media (max-width: 480px) {
 
-    .box {
+    #box_ortodoncia {
         grid-column: span 8;
         grid-column: 3/11;
-        #box_limpieza {
-            grid-column: 3/11;
-        }
     }
+    #box_cirugia {
+        grid-column: span 8;
+        grid-column: 3/11;
+    }
+    #box_limpieza {
+        grid-column: 3/11;
+        }
+    
 }
 
