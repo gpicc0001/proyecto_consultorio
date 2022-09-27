@@ -38,7 +38,7 @@
                 }
             #card_maxi {
                 grid-row: 2;
-                grid-column: 5/10;
+                grid-column: 4/8;
                 .text {
                     display: grid;
                     align-items: center;
@@ -66,14 +66,37 @@
     
     }
 
-@media (max-width:425px ) {
-    .subtitulo_who {
-        font-size: 300px;
-        justify-self: start;
-     }
- }
 
-
-
-
-
+    @media (max-width: 425px) {
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          grid-template-rows: repeat(3, 1fr); }
+          .cards .card_who {
+            display: grid;
+            grid-column: 1/8; }
+            .cards .card_who .text {
+              display: grid;
+              align-items: center;
+              padding: 20px;
+              font-size: 64px;
+              font-style: italic; }
+          .cards #card_maxi {
+            grid-row: 2;
+            grid-column: 3/8; }
+            .cards #card_maxi .text {
+              display: grid;
+              align-items: center;
+              padding: 20px;
+              font-size: 64px;
+              font-style: italic; }
+          .cards #card_yanina {
+            grid-row: 3;
+            grid-column: 1/8; }
+            .cards #card_yanina .text {
+              display: grid;
+              align-items: center;
+              padding: 20px;
+              font-size: 64px;
+              font-style: italic; } }
+      
