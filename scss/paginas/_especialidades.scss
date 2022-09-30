@@ -10,7 +10,10 @@
     .espec {
         grid-area: espec;
         display: grid;
-        
+        .subtitulo_especialidades {
+            font-size: 75px;
+            font-style: italic;
+        }
         .espec_box {
             display: grid;
             grid-template-columns: repeat(12, 1fr);

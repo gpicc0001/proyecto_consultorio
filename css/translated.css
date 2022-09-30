@@ -30,8 +30,8 @@ body {
     place-items: center; }
     .grilla .home .subtitulo_home {
       grid-area: subtitulo_home;
-      font-size: 56px;
-      font-family: 'Mali', cursive;
+      font-size: 75px;
+      font-style: italic;
       color: #7f5539;
       align-self: center; }
     .grilla .home #carouselExampleIndicators {
@@ -76,6 +76,9 @@ body {
   .grilla_espec .espec {
     grid-area: espec;
     display: grid; }
+    .grilla_espec .espec .subtitulo_especialidades {
+      font-size: 75px;
+      font-style: italic; }
     .grilla_espec .espec .espec_box {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -128,7 +131,8 @@ body {
     justify-items: center; }
     .grilla_who .who .subtitulo_who {
       font-size: 75px;
-      justify-self: start; }
+      justify-self: start;
+      font-style: italic; }
     .grilla_who .who .cards {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -145,7 +149,7 @@ body {
           font-style: italic; }
       .grilla_who .who .cards #card_maxi {
         grid-row: 2;
-        grid-column: 4/8; }
+        grid-column: 5/12; }
         .grilla_who .who .cards #card_maxi .text {
           display: grid;
           align-items: center;
@@ -180,7 +184,7 @@ body {
     font-style: italic; }
   .cards #card_maxi {
     grid-row: 2;
-    grid-column: 3/8; }
+    grid-column: 3/8 !important; }
   .cards #card_maxi .text {
     display: grid;
     align-items: center;
@@ -205,7 +209,7 @@ body {
   gap: 30px; }
   .grilla_ub .subtitulo_ubicacion {
     grid-area: subtitulo_ubicacion;
-    font-size: 48px;
+    font-size: 75px;
     font-style: italic; }
   .grilla_ub .mapa {
     grid-area: mapa;
@@ -252,7 +256,7 @@ body {
   gap: 30px; }
   .grilla_contact .contacto_subtitulo {
     grid-area: contacto_subtitulo;
-    font-size: 48px;
+    font-size: 75px;
     font-style: italic;
     padding: 20px; }
   .grilla_contact .contacto {

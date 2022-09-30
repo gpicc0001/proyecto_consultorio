@@ -19,6 +19,7 @@
         .subtitulo_who {
             font-size: 75px;
             justify-self: start;
+            font-style: italic;
          }
         .cards {
             display: grid;
@@ -38,7 +39,7 @@
                 }
             #card_maxi {
                 grid-row: 2;
-                grid-column: 4/8;
+                grid-column: 5/12;
                 .text {
                     display: grid;
                     align-items: center;
@@ -83,7 +84,7 @@
               font-style: italic; }
           .cards #card_maxi {
             grid-row: 2;
-            grid-column: 3/8; }
+            grid-column: 3/8 !important; }
             .cards #card_maxi .text {
               display: grid;
               align-items: center;
