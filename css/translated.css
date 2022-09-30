@@ -36,7 +36,7 @@ body {
       align-self: center; }
     .grilla .home #carouselExampleIndicators {
       grid-area: img_home;
-      width: 85%;
+      width: 90%;
       height: 75%;
       align-self: center;
       z-index: 1;
@@ -44,7 +44,7 @@ body {
       align-items: center; }
   .grilla .fondo_body {
     opacity: 0.2;
-    height: 1323px;
+    height: 1500px;
     width: 100%;
     grid-area: home;
     position: relative;
@@ -53,7 +53,7 @@ body {
 @media (max-width: 425px) {
   .fondo_body {
     max-width: 100%;
-    max-height: auto; } }
+    max-height: 100%; } }
 
 @media (max-width: 425px) {
   .subtitulo_home {
@@ -411,7 +411,7 @@ body {
     .header nav .link {
       text-decoration: none;
       color: black;
-      transition: all 2s;
+      transition: all 1s;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
     .header nav .link:hover {
       text-shadow: 3px 3px gray; }
@@ -475,8 +475,6 @@ body {
       border-style: dotted black;
       float: right;
       transition: all 1s; }
-    .footer .scroll #flecha:hover {
-      background-color: green; }
 
 @media (max-width: 425px) {
   .footer {
