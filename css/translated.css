@@ -263,7 +263,8 @@ body {
     grid-area: contacto;
     display: flex;
     justify-content: center;
-    padding: 20px; }
+    padding: 20px;
+    height: 1500px; }
     .grilla_contact .contacto .cuadrodetexto {
       width: 50%;
       height: 850px;
